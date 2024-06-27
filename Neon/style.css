@@ -1,0 +1,190 @@
+body {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#container {
+  display: block;
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+@font-face {
+  font-family: FiolexGirls;
+  src: url(fonts/FiolexGirls.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GeorgiaBoldItalic;
+  src: url(fonts/GeorgiaBoldItalic.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Signerica;
+  src: url(fonts/Signerica.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: UTMDuepuntozero;
+  src: url(fonts/UTMDuepuntozero.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+#weekday {
+  top: 88px;
+  left: -25px;
+  font-family: UTMDuepuntozero;
+  width: 320px;
+  height: 70px;
+  text-align: right;
+  z-index: 75;
+  font-weight: 100;
+  font-size: 35px;
+  color: white;
+  text-shadow: 0px -1px 5px Blue, 0px 5px 5px Blue, 0px 5px 10px Blue;
+  position: absolute;
+}
+
+.fg-color {
+  color: white;
+}
+
+#hours {
+  clear: both;
+  height: 1px;
+  font-family: UTMDuepuntozero;
+  font-weight: 400;
+  font-size: 1.8em;
+  top: -16px;
+  text-shadow: 0px -1px 5px green, 0px 5px 5px green, 0px 5px 10px green;
+}
+
+div#hours {
+  animation-delay: 000ms;
+  background-position: 0% 0%;
+}
+
+#minutes {
+  clear: both;
+  height: 1px;
+  font-family: GeorgiaBoldItalic;
+  font-weight: 400;
+  font-size: 1.6em;
+  top: 6px;
+  text-shadow: 0px -1px 10px goldenrod, 0px 5px 10px goldenrod;
+}
+
+div#minutes {
+  animation-delay: 200ms;
+  background-position: 50% 20%;
+}
+
+#seconds {
+  clear: both;
+  height: 2px;
+  font-family: FiolexGirls;
+  font-weight: 400;
+  font-size: 1.5em;
+  top: 25px;
+  text-shadow: 0px -1px 10px red, 0px 5px 10px red;
+}
+
+div#seconds {
+  animation-delay: 400ms;
+  background-position: 50% 40%;
+}
+
+.bg-color {
+  background: white;
+}
+
+#date {
+  clear: both;
+  height: 1px;
+  font-family: GeorgiaBoldItalic;
+  font-weight: 400;
+  font-size: 1.8em;
+  top: 38px;
+  text-shadow: 0px -1px 10px gainsboro, 0px 5px 10px gainsboro;
+}
+
+div#date {
+  animation-delay: 800ms;
+  background-position: 50% 80%;
+}
+
+#month {
+  clear: both;
+  font-family: GeorgiaBoldItalic;
+  font-weight: 400;
+  font-size: 1.5em;
+  top: 65px;
+  text-shadow: 0px -1px 10px cyan, 0px 5px 10px cyan;
+}
+
+div#month {
+  animation-delay: 600ms;
+  background-position: 50% 60%;
+}
+
+div#clock {
+  position: relative;
+  margin: 20px;
+  top: 21%;
+  text-align: right;
+}
+
+div.time-date {
+  position: relative;
+  padding: 5px;
+  right: -320px;
+  -webkit-animation: slide 1s 1 forwards;
+  animation: slide 1s 1 forwards;
+  z-index: 2;
+}
+
+@keyframes slide {
+  0% {
+    right: -320px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.divider {
+  clear: both;
+  position: relative;
+  width: 0;
+  height: 1px;
+  margin: 5px;
+  top: 45px;
+  float: right;
+  z-index: 2;
+  -webkit-animation: open 1s ease 1400ms 1 forwards;
+  animation: open 1s ease 1400ms 1 forwards;
+}
+
+@keyframes open {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 140px;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="scripts/config.js"></script>
+    <script type="text/javascript" src="scripts/moment.min.js"></script>
+    <script type="text/javascript" src="scripts/calendar.js"></script>
+    <title>Neon by longthinh</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="clock" class="fg-color">
+        <div id="hours" class="time-date"></div>
+        <div id="minutes" class="time-date"></div>
+        <div id="seconds" class="time-date"></div>
+        <div class="divider bg-color"></div>
+        <div id="date" class="time-date"></div>
+        <div id="month" class="time-date"></div>
+      </div>
+    </div>
+    <div>
+      <div id="hour"></div>
+      <script src="scripts/calendar.js"></script>
+      <div id="minute"></div>
+      <script src="scripts/calendar.js"></script>
+      <div id="second"></div>
+      <script src="scripts/calendar.js"></script>
+      <div id="num_date"></div>
+      <script src="scripts/calendar.js"></script>
+      <div id="weekday">
+        <script language="JavaScript">
+          calendarDate();
+          setInterval("calendarDate()", 1000);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
